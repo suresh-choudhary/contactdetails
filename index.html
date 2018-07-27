@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script data-require="angular.js@1.5.11" data-semver="1.5.11" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script scr="https://raw.githubusercontent.com/elevateweb/elevatezoom/master/jquery.elevatezoom.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true&key=AIzaSyCzs_jmdFdICLzZR_szVgQm5GobWQEG5es&libraries=places&language=en-US"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+  </head>
+
+  <body ng-app="angularTable">
+
+    <div class="Top">
+        <div class="row" style="width:100%;margin-top: 57px;">
+          <div class="col-sm-12">
+            <a class="navbar-brand orangeLabel logotext" href="#">Logo</a>
+            <ul id="menu">
+              <li style="font-size: 20px;">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <ul style="right: -12px!important;left: -70px;padding:none;">
+                  <li>
+                    <a href="#" style="font-size: 17px;">Change Password</a>
+                  </li>
+                  <li>
+                    <a href="logout" style="font-size: 17px;">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12" id="header">
+            <div class="row whiteBG" style="padding-left: 13px;">
+              <h4>Contacts</h4>
+            </div>
+            <div class="row whiteBG padl10" style="padding-left: 13px;padding-bottom: 13px;">
+              <div class="col-sm-12 col-xs-12 col-lg-12">
+                <div class="search-container">
+                  <form>
+                    <input type="text" class="searchinput" autocomplete="off" placeholder="Search.." name="search" ng-model="searchkey" ng-keyup="val=searchkey" >
+                    <button type="button" class="orangeBG"  ng-click="val=undefined;searchkey='';">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6 col-lg-6 right">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12" style="height: 20px;background-color: #E3E3E3;">
+      
+          </div>
+        </div>
+      
+      
+      </div>
+      <div class="Container" ng-controller="listdata">
+        <div class="Left">
+          <div ng-repeat=" user in users | filter:val" class="row whiteBG padTopBot10 padl10">
+            <table style="width: 93%;    margin-left: 5px;" ng-click="showUser(user)">
+              <tr>
+                <td class="center" style="width: 64px;">
+                  <img class="listImg" src="{{user.img}}">
+                </td>
+                <td>
+                  <h5 class="colorText restTitle" style="">{{user.name}}</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="Middle">
+          <div class="row whiteBG padTopBot10 pad20">
+            <div class="col-sm-2 col-xs-2 col-md-2" style="min-width: 150px;">
+              <img class="restImg" src="{{selectedUser.img}}">
+            </div>
+            <div class="col-sm-9 col-xs-9 col-md-9 padleft30">
+              <h3 class="restName">{{selectedUser.name}}</h3>
+              <label class="orangeLabel">{{restCatText}}</label>
+             <div ng-if="selectedUser.rating==0">
+                <span><i  class="fa fa-heart-o" aria-hidden="true"></i></span>
+                <span><i  class="fa fa-heart-o" aria-hidden="true"></i></span>
+                <span><i  class="fa fa-heart-o" aria-hidden="true"></i></span>
+                <span><i  class="fa fa-heart-o" aria-hidden="true"></i></span>
+                <span><i  class="fa fa-heart-o" aria-hidden="true"></i></span>
+             </div>
+             <div ng-if="selectedUser.rating!=0">
+                    <span ng-repeat="st in stars">
+                        <i ng-if="st<1" class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i ng-if="st>0" class="fa fa-heart" aria-hidden="true"></i>
+                    </span>
+            </div>
+              <br/>
+              <span class="colorText">
+                <button class="btn btn-default" style="background-color: black;color: white;">Send message</button>
+              </span>
+              <br/>
+      
+            </div>
+            
+          </div>
+          <div class="row whiteBG padTopBot10 pad20">
+              <h5>{{selectedUser.Description}}</h5>
+          </div>
+          <div class="row whiteBG padTopBot10 pad20">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td><label>Like</label></td>
+                                <td><label>Dislike</label></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="data in userData">
+                                <td>{{data.like}}</td>
+                                <td>{{data.dislike}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+        </div>
+      </div>
+
+</body>
+
+</html>

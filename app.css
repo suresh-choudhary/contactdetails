@@ -1,0 +1,1106 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+body{
+
+}
+
+.pt20{
+    margin-top: 20px;
+}
+
+html{
+    background-color: #E3E3E3;
+
+}
+body{
+   background-color: #E3E3E3;
+
+}
+
+.orangeLabel{
+    color : #F38656!important;
+}
+
+.orangeBG{
+     background-color: #F38656!important;
+    color: #ffffff!important;
+}
+.greyLabel{
+    color: #E3E3E3;
+
+}
+input{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding-left: 0px;
+
+}
+
+input:hover,input:focus {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none !important;
+
+}
+
+input:focus,
+textarea {
+  outline: none !important;
+}
+
+
+/*****checkbox***/
+.check-container {
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ccc;
+padding-top: 3px;
+
+
+}
+
+/* Hide the browser's default checkbox */
+
+.check-container input {
+
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.check-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.check-container input:checked~.checkmark {
+
+  background-color: #F38656;
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.check-container input:checked~.checkmark:after {
+
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.check-container .checkmark:after {
+
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,input:-webkit-autofill:focus {
+
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+.label16{
+    font-size: 16px;
+}
+
+.greyBG {
+  background: #e3e3e3 !important;
+}
+
+.whiteBG {
+  background-color: #ffffff !important;
+}
+
+
+/*************************curve header******************************/
+#curvedDiv {
+  height: 50px;
+  position: relative;
+  line-height: 100px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.curve:before {
+  content: '';
+  width: 30%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  border-bottom-right-radius:40% 80px;
+}
+
+.curve:after {
+  content: '';
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+}
+
+
+.curve:before {
+  background: #ffffff!important;
+  left: 0;
+}
+.curve:after {
+  background: #ffffff!important;
+  right: 0;
+  height: 50%;
+  width: 100%;
+}
+
+.cur {
+  border-bottom: 21px solid #E3E3E3;
+  border-left: 30px solid transparent;
+  border-right: 0 solid transparent;
+  height: 0;
+}
+
+.headerDiv{
+      height: 45px;
+}
+
+.center{
+  text-align: center;
+}
+
+.headerTitle{
+      margin-top: 15px;
+}
+
+.greyColor{
+  color: #a7a4a4;
+
+}
+
+.greyBG {
+  background-color: #E3E3E3;
+  border-color: #E3E3E3;
+}
+
+.logotext {
+  font-size: 24px;
+  font-weight: bold;
+      margin-left: -17px;
+
+}
+
+.whitebg {
+  background-color: white;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.main {
+  -webkit-border-top-left-radius: 40% 80px;
+  -moz-border-radius-topleft: 40% 80px;
+  -moz-border-radius-topright: 40% 80px;
+  border-top-left-radius: 40% 80px;
+  background: #e3e3e3;
+  height: 50px
+}
+
+.ml10{
+  margin-left: 10px;
+}
+
+
+
+
+/****new***/
+.setting{
+      float: right;
+      margin-right: 10px;
+      z-index: 111111111;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+
+  text-decoration: none;
+  color: black;
+
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+
+}
+a{
+    color: black;
+
+}
+
+
+
+.btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Boostrap Buttons Styling */
+
+.roundButton {
+      padding: .5rem 2.4rem;
+      background: #EF6530;
+      color: #FFF;
+      border-radius: 2rem;
+      font-size: 1rem;
+      border: none;
+font-size: 15px;
+width: 30%;
+padding: 10px;
+}
+.defaultBTN{
+  padding: .5rem 2.4rem;
+  background: #EF6530;
+  color: #FFF;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  font-size: 15px;
+  width: 15%;
+  padding: 10px;
+}
+
+.pad20{
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.padall20{
+      padding: 20px;
+
+}
+
+.right{
+  text-align: right;
+}
+
+.searchinput {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius: 20px;
+padding-left: 18px;
+margin-left: -15px;
+   border:none;
+}
+.searchinput:focus{
+  border:1px solid #F38656;
+
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+ margin-left: -37px;
+
+}
+
+input[type="button"] {
+  outline: none;
+}
+
+input[type="button"]:focus {
+ outline: none!important;
+ border: none!important;
+}
+
+.space50{
+  height: 50px;
+}
+.space160 {
+  height: 160px;
+  z-index: 11111111;
+
+
+}
+.margin160{
+  margin-top: 160px;
+
+}
+.mar20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.listImg{
+     width: 50px;
+     height: 50px;
+     object-fit: fill;
+     border-radius: 5px;
+}
+.padTopBot10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+    margin-bottom: 3px;
+
+}
+
+.padleft20{
+  padding-left: 20px;
+}
+
+.ratingBadge{
+  float: right;
+ margin-top: -34px;
+
+  font-size: 10px;
+  /* right: 0; */
+
+  margin-right: -8px;
+
+}
+
+.greyLeftBorder{
+  border-left: 15px solid #E3E3E3;
+
+}
+.greyRightBorder1 {
+  border-right: 1px solid #E3E3E3;
+}
+
+.restImg {
+  width: 140px;
+  height: 140px;
+  object-fit: fill;
+  border-radius: 15px;
+}
+
+.padleft30{
+  padding-left: 30px;
+}
+
+.orangeBadge{
+      font-size: 16px;
+      border-radius: 5px;
+
+}
+
+.restName{
+      margin-top: 5px;
+}
+
+.mar2{
+      margin-top: -2px;
+}
+
+
+.colorText{
+  color: #777;
+}
+
+.dotted{
+  border:1px dashed rgb(214, 209, 209);
+}
+
+.dot {
+ height: 7px;
+ width: 7px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marlr5{
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.controlBtn{
+  width: 21px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.controlDiv {
+  float: right;
+  position: absolute;
+  margin-top: -80px;
+  right: 0;
+  margin-right: 13px;
+
+}
+
+.coupons{
+border: 1px solid #E3E3E3;
+
+}
+.CouponCodeRight{
+   float: right;
+   position: absolute;
+       margin-top: -75px;
+       font-size: 17px;
+
+   right: 0;
+   margin-right: 13px;
+
+}
+
+
+
+.mainHeaderFixed{
+  position: fixed;
+  width: 100%;
+  z-index: 1111111;
+
+}
+.padl10{
+  padding-left: 9px;
+
+}
+
+
+/******for scrolling****/
+#top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #E3E3E3;
+  z-index: 11111111;
+}
+
+#wrapper {
+  width: 100%;
+ background-color: #E3E3E3;
+}
+
+#side-nav {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #E3E3E3;
+margin-left:20px;
+
+}
+
+#content-wrapper {
+  margin: 0px 0 0 31%;
+  padding: 0 30px;
+  background-color: #E3E3E3;
+overflow: hidden;
+
+}
+
+
+/******scroll bar*****/
+/* width */
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #E3E3E3;
+
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+
+.restTitle{
+
+  font-size: 17px;
+margin-top: 5px;
+
+}
+.listSpan{
+  font-size: 12px;
+}
+
+/********dropdown settings******/
+#menu {
+  float: right;
+  margin: 0;
+  padding: 10px 0 0 0;
+  list-style: none;
+  border-radius: 50px;
+  color: black;
+}
+
+#menu li {
+  float: left;
+  padding: 0 0 10px 0;
+  position: relative;
+  color: black;
+
+}
+
+#menu a {
+  float: left;
+  height: 25px;
+  padding: 0 25px;
+  color: black;
+  text-decoration: none;
+  padding-left: 40px;
+
+}
+
+
+
+*html #menu li a:hover {
+  /* IE6 */
+  color: #fafafa;
+}
+
+#menu li:hover>ul {
+  display: block;
+}
+
+/* Sub-menu */
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 99999;
+   background-color: #ffffff;
+
+}
+
+#menu ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#menu ul li:last-child {
+  box-shadow: none;
+}
+
+#menu ul a {
+  padding: 10px;
+  height: auto;
+  line-height: 1;
+  display: block;
+  white-space: nowrap;
+  float: none;
+  text-transform: none;
+}
+
+*html #menu ul a {
+  /* IE6 */
+  height: 10px;
+  width: 150px;
+}
+
+*:first-child+html #menu ul a {
+  /* IE7 */
+  height: 10px;
+  width: 150px;
+}
+
+#menu ul a:hover {
+  color: #EF6530;
+}
+
+#menu ul li:first-child a {
+  border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+  content: '';
+  position: absolute;
+  left: 64px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #ffffff;
+
+}
+
+#menu ul li:first-child a:hover:after {
+  border-bottom-color: #ffffff;
+
+}
+
+#menu ul li:last-child a {
+  border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+
+#menu:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+textarea{
+      resize: none;
+}
+
+.floatRight{
+  float: right;
+}
+
+.space20{
+  height: 20px;
+}
+
+
+.controlDiv{
+  display: none;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.pac-container{
+  z-index: 99999999999999999999999;
+}
+
+.addrest {
+      margin-left: 20px!important;
+      margin-right: 20px !important;
+      padding: 20px;
+}
+
+.form-control{
+  outline: none;
+  border: none;
+}
+
+.ng2-tags-container{
+  padding-left: 8px;
+}
+.ng2-tag-input.ng2-tag-input--focused{
+  border-bottom: none!important;
+
+}
+
+tag{
+      background-color:#EF6530 !important;
+      color: white!important;
+}
+delete-icon path{
+  fill: #ffffff!important;
+}
+
+
+
+/***************************checkbox and radio*****************************/
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.ng2-tag-input__text-input {
+  width: 300px !important;
+}
+
+/* Absolute Center Spinner */
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*I love me some border-box*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*This just stops me getting horizontal scrolling if anything overflows the width*/
+
+body {
+  overflow-x: hidden;
+}
+
+/*Just removing default browser padding/margin*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #ebebeb;
+}
+
+/*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
+
+.Top {
+  display: flex;
+ align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+
+}
+
+/*This is our main wrapping element, it's made 100vh high to ensure it is always the correct size and then moved into place and padded with negative margin and padding*/
+
+.Container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 0px;
+  padding-top: 120px;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+/*All the scrollable sections should overflow and be whatever height they need to be. As they are flex-items (due to being inside a flex container) they could be made to stretch full height at all times if needed.
+WebKit inertia scrolling is being added here for any present/future devices that are able to make use of it.
+*/
+
+.Left,
+.Middle,
+.Right {
+  overflow: auto;
+  height: auto;
+  padding: .5rem;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+/*Entirely optional – just wanted to remove the scrollbar on WebKit browsers as I find them ugly*/
+
+.Left::-webkit-scrollbar,
+.Middle::-webkit-scrollbar,
+.Right::-webkit-scrollbar {
+  display: none;
+}
+
+/*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
+
+.Left {
+  width: 30%;
+      margin-top: 40px;
+ margin-left: 20px;
+}
+
+.Middle {
+  flex: 1;
+  margin-top: 40px;
+    margin-left: 12px;
+    padding-left: 20px;
+margin-right: 20px;
+}
+
+.Right {
+  width: 12.5rem;
+}
+
+.pad20{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+
+.controlBtn{
+  cursor: pointer;
+}
+
+.Left{
+  border-right: 15px solid #E3E3E3;
+}
+@media only screen and (max-width:760px){
+
+#header{
+margin-top:50px;
+}
+}
